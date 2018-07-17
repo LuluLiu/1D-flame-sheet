@@ -1,0 +1,11 @@
+# PETSc-3.9.3 works
+
+flame1D_guess.c: This version works for the special initial guess. The initial guess
+comes from the solution of system for the fixed rho and mu.
+
+flame1D.c: Pesudo-time + Newton Solver.
+
+flame1D_NE.c: -NE such that we solve steady-state problem using NE solver
+
+flame1D_NE_mod.c: -NE such that we solve steady-state problem using adaptive NE solver
+                  rho and eta control whether we choose Newton or NE
